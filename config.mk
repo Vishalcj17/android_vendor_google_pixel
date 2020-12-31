@@ -21,6 +21,11 @@ PRODUCT_PACKAGES += \
     PixelSettingsOverlay \
     PixelSystemUIOverlay
 
+# SELinux
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    hardware/google/pixel-sepolicy/flipendo \
+    hardware/google/pixel-sepolicy/turbo_adapter
+
 # Sounds
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.alarm_alert=Bright_morning.ogg \
